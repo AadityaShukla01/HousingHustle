@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import InfoBoxes from "./InfoBoxes";
 import SearchForm from "./SearchForm";

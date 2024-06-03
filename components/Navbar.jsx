@@ -116,9 +116,8 @@ const Navbar = () => {
                 google etc */}
                 {providers &&
                   Object.values(providers).map((provider, index) => (
-                    <div>
+                    <div key={index}>
                       <button
-                        key={index}
                         onClick={() => {
                           signIn(provider.id);
                         }}
@@ -281,9 +280,8 @@ const Navbar = () => {
             )}
             {providers &&
               Object.values(providers).map((provider, index) => (
-                <div>
+                <div key={index}>
                   <button
-                    key={index}
                     onClick={() => {
                       signIn(provider.id);
                       setMobileMenu(false);

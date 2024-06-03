@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
+
 const InfoBox = ({
   heading,
-  backgroundColor = "bg-gray-200",
-  textColor = "text-gray-900",
+  backgroundColor = "bg-gray-100",
+  textColor = "text-gray-800",
   buttonInfo,
   children,
 }) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import InfoBox from "./infoBox";
+import InfoBox from "./InfoBox";
 
 const InfoBoxes = () => {
   return (

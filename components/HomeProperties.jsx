@@ -1,24 +1,23 @@
 "use client";
 import React, { useEffect, useState } from "react";
-// import properties from "@/properties.json";
 import PropertyCard from "./PropertyCard";
 import Link from "next/link";
 
 const HomeProperties = async () => {
   const [properties, setProperties] = useState([]);
   useEffect(() => {
-    async function fetchProperties() {
+    const fetchProperties = async () => {
       try {
         const res = await fetch(
           `${process.env.NEXT_PUBLIC_API_DOMAIN}/properties`
         );
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         setProperties(data.properties);
       } catch (error) {
         console.log(error);
       }
-    }
+    };
     fetchProperties();
   }, []);
 
